@@ -5,6 +5,9 @@ export const SocialIconsStyled = styled.div`
   align-items: center;
   justify-content: start;
   list-style-type: none;
+  @media (max-width: ${(props) => props.theme.mobile}) {
+    justify-content: center;
+  }
   li {
     margin-right: 5px;
     &:hover {
