@@ -26,15 +26,7 @@ function App() {
         <Header />
         <Container>
           {data.map((c) => {
-            return (
-              <Card
-                key={c.id}
-                id={c.id}
-                title={c.title}
-                body={c.body}
-                img={c.image}
-              />
-            );
+            return <Card key={c.id} {...c} />;
           })}
         </Container>
         <Footer />

@@ -11,6 +11,7 @@ body{
   background-color: ${(props) => props.theme.color.body};
   color: hsl(192,100%,9%);
   font-size: 1.15em;
+  user-select:none;
 }
 p{
   opacity: 0.6;
@@ -18,5 +19,9 @@ p{
 }
 img{
   max-width: 100%;
+}
+li{
+  user-select:none;
+  cursor: pointer;
 }
 `;
